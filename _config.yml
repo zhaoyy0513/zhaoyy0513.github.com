@@ -6,7 +6,7 @@ email: Neonyuyang@163.com
 description: "征程已定，矢志不渝"
 keyword: ""
 url: "https://github.com/zhaoyy0513"              # your host, for absolute URL
-baseurl: "/zhaoyyblog"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
