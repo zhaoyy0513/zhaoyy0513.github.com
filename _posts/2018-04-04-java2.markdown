@@ -1,0 +1,27 @@
+---
+layout:     post
+title:      "Java中String.split使用详解"
+subtitle:   "Java日常笔记"
+date:       2018-04-04
+author:     "ZHAOyy"
+header-img: "img/post-bg-unix-linux.jpg"
+tags:
+    - java
+---
+
+> This document is not completed and will be updated anytime.
+
+
+## Java中String.split使用详解
+```js
+{
+①、如果用“.”作为分隔的话，必须是如下写法：String.split("\\."),这样才能正确的分隔开，不能用String.split(".");
+②、如果用“|”作为分隔的话，必须是如下写法：String.split("\\|"),这样才能正确的分隔开，不能用String.split("|");“.”和“|”都是转义字符，必须得加"\\";<br/>
+③、如果在一个字符串中有多个分隔符，可以用“|”作为连字符，比如：“a=1 and b =2 or c=3”,把三个都分隔出来，可以用String.split("and|or"); 
+}
+```
+
+1、若分隔符为“.”、“|”、“*”、“+”等转义字符时，直接使用str.split(".")会抛出异常，都必须在前面加"\\"，如split(\\|);<br/> 
+2、如果用"\"作为分隔，就得写成这样：String.split("\\\\")，因为在Java中是用"\\"来表示"\"的，自定义字符串是这样的：String Str="a\\b\\c"; <br/> 
+3、如果在一个字符串中有多个分隔符，可以用"|"作为连字符，比如：String str="Java string-split#test"，可以用Str.split(" |-|#")把每个字符串分开; <br/> 
+4、split 方法的结果是一个字符串数组，在 stingObj 中每个出现 separator 的位置都要进行分解，separator不作为任何数组元素的部分返回。<br/> 
