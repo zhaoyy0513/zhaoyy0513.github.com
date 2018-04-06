@@ -14,20 +14,20 @@ tags:
 
 **一，创建列表**  
 只要把逗号分隔的不同的数据项使用方括号（[ ]）括起来即可 下标（角标，索引）从0开始，最后一个元素的下标可以写-1<br/>
-list  =  ['1'，‘2，‘3’]
+list  =  ['1'，‘2，‘3’]<br/>
 list = [] 空列表<br/>
 **二，添加新的元素**<br/>
 list.append() 在list 末尾增加一个元素<br/>
 list.insert（n,'4'） 在指定位置添加元素，如果指定的下标不存在，那么就是在末尾添加<br/>
 list1.extend(list2) 合并两个list   list2中仍有元素<br/>
-三，查看列表中的值
-print(list)    遍历列表
-等价于    for i in list:
-                    print i
+**三，查看列表中的值**<br/>
+print(list)    遍历列表<br/>
+等价于    for i in list:<br/>
+                    print i<br/>
 print(list[n])  使用下标索引来访问列表中的值，同样你也可以使用方括号的形式截取字符<br/>
 print(list.count(xx)) 查看某个元素在这个列表里的个数，如果改元素不存在，那么返回0<br/>
 print(list.index(xx))找到这个元素的小标，如果有多个，返回第一个，如果找一个不存在的元素会报错<br/>
-**四，删除list 中的元素**
+**四，删除list 中的元素**<br/>
 list.pop() 删最后一个元素<br/>
 list.pop(n)指定下标，删除指定的元素，如果删除一个不存在的元素会报错<br/>
 list.remove(xx) 删除list 里面的一个元素，有多个相同的元素，删除第一个 <br/>
@@ -35,29 +35,29 @@ print(list.pop()) 有返回值<br/>
 print(list.remove()) 无返回值<br/>
 del  list[n] 删除指定下标对应的元素 <br/>
 del list 删除整个列表， list删除后无法访问<br/>
-**五，排序和反转**
-list.reverse()将列表反转
-list.sort()排序，默认升序
+**五，排序和反转**<br/>
+list.reverse()将列表反转<br/>
+list.sort()排序，默认升序<br/>
 list.sort(reverse=True) 降序排列<br/>
 `注：list 中有字符串，数字时不能排序，排序针对同类型`<br/>
-**六，列表操作的函数**
+**六，列表操作的函数**<br/>
 1、len(list)：列表元素个数 <br/>
 2、max(list)：返回列表元素最大值 <br/>
 3、min(list)：返回列表元素最小值<br/> 
 4、list(seq)：将元组转换为列表<br/>
 5、enumerate 用法（打印元素对应的下标）<br/>
-同时取下标，元素
-	list1 = ['a','b','c']
-	for i ,v in enumerate(list1):
+同时取下标，元素<br/>
+	list1 = ['a','b','c']<br/>
+	for i ,v in enumerate(list1):<br/>
 	print('index = %s ,value = %s ' %(i,v))<br/>
-结果如下：
-	index = 0,value = a
-	index = 1,value = b
+结果如下：<br/>
+	index = 0,value = a<br/>
+	index = 1,value = b<br/>
 	index = 2,value = c<br/>
-**七，list 循环和切片**
-*1，循环*
-for i in list:
-       print i
+**七，list 循环和切片**<br/>
+*1，循环*<br/>
+for i in list:<br/>
+       print i<br/>
 如果直接for 循环一个list 的时候，那么每次循环的值都是这个list 里面的元素<br/>
 *2，切片（list 取值的一种方法）*<br/>
 name[n:m]  切片是不包含后面那个元素的值（顾头不顾尾）<br/>
@@ -78,15 +78,15 @@ list = [m + n for m in 'ABC' for n in 'XYZ']<br/>
 print(list)<br/>
 输出结果：['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']<br/>
 实例5：for循环其实可以同时使用两个甚至多个变量，比如dict的items()可以同时迭代key和value：<br/>
-法一：
-	>>> d = {'x': 'A', 'y': 'B', 'z': 'C' }
-	>>> for k, v in d.items():
-	...     print(k, '=', v)
-	...
-	y = B
-	x = A
-	z = C<br/>
-法二：
-	>>> d = {'x': 'A', 'y': 'B', 'z': 'C' }
-	>>> [k + '=' + v for k, v in d.items()]
-	['y=B', 'x=A', 'z=C']
+***法一：***<br/>
+	>>> d = {'x': 'A', 'y': 'B', 'z': 'C' }<br/>
+	>>> for k, v in d.items():<br/>
+	...     print(k, '=', v)<br/>
+	...<br/>
+	y = B<br/>
+	x = A<br/>
+	z = C<br/><br/>
+***法二：***<br/>
+	>>> d = {'x': 'A', 'y': 'B', 'z': 'C' }<br/>
+	>>> [k + '=' + v for k, v in d.items()]<br/>
+	['y=B', 'x=A', 'z=C']<br/>
