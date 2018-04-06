@@ -14,11 +14,17 @@ tags:
 
 **一，创建列表**  
 只要把逗号分隔的不同的数据项使用方括号（[ ]）括起来即可 下标（角标，索引）从0开始，最后一个元素的下标可以写-1
+
 list  =  ['1'，‘2，‘3’]
+
 list = [] 空列表
+
 **二，添加新的元素**
+
 list.append() 在list 末尾增加一个元素
+
 list.insert（n,'4'） 在指定位置添加元素，如果指定的下标不存在，那么就是在末尾添加
+
 list1.extend(list2) 合并两个list   list2中仍有元素
 三，查看列表中的值
 print(list)    遍历列表
@@ -28,7 +34,7 @@ print(list)    遍历列表
 
 print(list[n])  使用下标索引来访问列表中的值，同样你也可以使用方括号的形式截取字符
 print(list.count(xx)) 查看某个元素在这个列表里的个数，如果改元素不存在，那么返回0
-print(list.index(xx))找到这个元素的小标，如果有多个，返回第一个，如果找一个不存在的元素会报错
+print(list.index(xx))找到这个元素的小标，如果有多个，返回第一个，如果找一个不存在的元素会报错<br/>
 四，删除list 中的元素
 list.pop() 删最后一个元素
 list.pop(n)指定下标，删除指定的元素，如果删除一个不存在的元素会报错
@@ -36,12 +42,12 @@ list.remove(xx) 删除list 里面的一个元素，有多个相同的元素，�
 print(list.pop()) 有返回值
 print(list.remove()) 无返回值
 del  list[n] 删除指定下标对应的元素 
-del list 删除整个列表， list删除后无法访问
+del list 删除整个列表， list删除后无法访问<br/>
 **五，排序和反转**
 list.reverse()将列表反转
 list.sort()排序，默认升序
 list.sort(reverse=True) 降序排列
-`注：list 中有字符串，数字时不能排序，排序针对同类型`
+`注：list 中有字符串，数字时不能排序，排序针对同类型`<br/>
 **六，列表操作的函数**
 1、len(list)：列表元素个数 
 2、max(list)：返回列表元素最大值 
