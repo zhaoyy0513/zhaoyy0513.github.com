@@ -1,6 +1,6 @@
 # Site settings
-title: 夺目Zled
-SEOTitle: 夺目Zled
+title: 深蓝梦境
+SEOTitle: 深蓝梦境
 header-img: img/home-bg.jpg
 email: Neonyuyang@163.com
 description: "征程已定，矢志不渝"
@@ -15,8 +15,7 @@ RSS: false
 weibo_username:     吹不散眉弯阳gg
 zhihu_username:     zhao-yu-yang-61
 github_username:    zhaoyy0513
-#twitter_username:  huxpro
-#facebook_username:  huxpro
+
 
 
 
@@ -49,8 +48,7 @@ kramdown:
 # Disqus settings
 #disqus_username: _your_disqus_short_name_
 
-# Duoshuo settings
-duoshuo_username: huxblog
+
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -62,7 +60,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+#ga_domain: huangxuan.me
 
 
 
